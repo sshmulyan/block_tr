@@ -19,5 +19,9 @@ import org.puremvc.as3.patterns.proxy.Proxy;
             super(NAME, new GameWindowVO(GeneralConfig.WIDHT, GeneralConfig.HEIGHT));
             _figures = [new Line, new MiniLine, new Cube, new Bracket];
 		}
+
+        public function get figures():Array{
+            return _figures;
+        }
 	}
 }

@@ -1,6 +1,8 @@
 package core.controler {
 
-	import org.puremvc.as3.interfaces.INotification;
+import core.model.GameWindowProxy;
+
+import org.puremvc.as3.interfaces.INotification;
 	import org.puremvc.as3.patterns.command.SimpleCommand;
 
 	public class GeneralCommands extends SimpleCommand {
@@ -9,5 +11,9 @@ package core.controler {
 
 			super.execute(notification);
 		}
+
+        protected function get gameWindowProxy():GameWindowProxy{
+            return facade.retrieveProxy(GameWindowProxy.NAME) as GameWindowProxy;
+        }
 	}
 }

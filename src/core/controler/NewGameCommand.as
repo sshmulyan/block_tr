@@ -1,6 +1,7 @@
 package core.controler {
 
-	import core.model.GameWindowProxy;
+import core.config.GeneralNotification;
+import core.model.GameWindowProxy;
 
 	import org.puremvc.as3.interfaces.INotification;
 
@@ -15,7 +16,7 @@ package core.controler {
 		private function initializeComponents():void {
 
 			facade.registerProxy(new GameWindowProxy());
-
+            sendNotification(GeneralNotification.START_GAME_COMMAND);
 		}
 	}
 }
