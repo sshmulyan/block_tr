@@ -3,11 +3,11 @@ package core.model.vo {
 	import core.config.GeneralConfig;
 
 	public class ZoneFigureVO {
-		public var _zone:Array;
+		public var zone:Array;
 
 		public function ZoneFigureVO(typeFigures:String):void {
 
-			_zone = [];
+			zone = [];
 
 			switch(typeFigures) {
 				case GeneralConfig.CUBE_2:
@@ -35,7 +35,7 @@ package core.model.vo {
 				for(var y:int = 0; y < sizeY; y++) {
 					lineZone[y] = 0;
 				}
-				_zone[x] = lineZone;
+				zone[x] = lineZone;
 			}
 		}
 	}

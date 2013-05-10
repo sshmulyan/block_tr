@@ -3,20 +3,16 @@ package core.model.vo.block {
 	import core.config.GeneralConfig;
 	import core.model.vo.ZoneFigureVO;
 
-	public class Line {
+	public class Line extends Figure {
 
-		private var _figure:ZoneFigureVO;
+		override protected function generateFigure():void {
 
-		public function Line() {
-
-			generateFigure();
-		}
-
-		private function generateFigure():void {
-
+            type = GeneralConfig.LINE;
 			var direction:int = Math.random() * 2;
-			_figure = new ZoneFigureVO(GeneralConfig.LINE);
-			_figure._zone[0][1] = 1;
+			figure = new ZoneFigureVO(GeneralConfig.LINE);
+			for(var i:int = 0; i < figure.zone.length; i++){
+                figure.zone[1][i] = 1;
+            }
 		}
 	}
 }
