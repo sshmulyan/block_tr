@@ -5,10 +5,10 @@
       <configuration name="Tetris" pure-as="true" main-class="Tetris" output-file="Tetris.swf" output-folder="$MODULE_DIR$/bin-debug">
         <dependencies target-player="11.1">
           <entries>
-            <entry library-id="5571dcc5-5c3a-4e63-b190-a371cbb75151">
+            <entry library-id="885e62b2-f3fe-448e-b98f-45f73b0eae6b">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-id="82c5e1a5-9ac1-4d98-961a-57d3992a0204">
+            <entry library-id="b6d37f1e-af9b-4cdd-a08e-23cc8e64024f">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -35,7 +35,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" exported="">
       <library type="flex">
-        <properties id="5571dcc5-5c3a-4e63-b190-a371cbb75151" />
+        <properties id="885e62b2-f3fe-448e-b98f-45f73b0eae6b" />
         <CLASSES>
           <root url="jar://$MODULE_DIR$/PureMVC_AS3_2_0_4/bin/PureMVC_AS3_2_0_4.swc!/" />
         </CLASSES>
@@ -45,7 +45,7 @@
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library type="flex">
-        <properties id="82c5e1a5-9ac1-4d98-961a-57d3992a0204" />
+        <properties id="b6d37f1e-af9b-4cdd-a08e-23cc8e64024f" />
         <CLASSES>
           <root url="file://$MODULE_DIR$/lib" />
         </CLASSES>

@@ -18,7 +18,7 @@ public class Bracket extends Figure{
         figure.zone[0][0] = 1;
         figure.zone[0][1] = 1;
         figure.zone[0][2] = 1;
-        figure.zone[2][2] = 1;
+        figure.zone[1][2] = 1;
     }
 }
 }

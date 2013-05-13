@@ -16,7 +16,8 @@ import core.model.GameWindowProxy;
 		private function initializeComponents():void {
 
 			facade.registerProxy(new GameWindowProxy());
-            sendNotification(GeneralNotification.START_GAME_COMMAND);
+            sendNotification(GeneralNotification.LOAD_RESOURSE_COMMAND);
+            //sendNotification(GeneralNotification.START_GAME_COMMAND);
 		}
 	}
 }

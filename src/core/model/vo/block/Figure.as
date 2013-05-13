@@ -10,7 +10,7 @@ import core.model.vo.ZoneFigureVO;
 
 public class Figure {
     public var type:String;
-    protected var figure:ZoneFigureVO;
+    public var figure:ZoneFigureVO;
 
     public function Figure():void{
         generateFigure();

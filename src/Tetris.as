@@ -6,6 +6,7 @@ package {
 	import flash.display.Sprite;
 	import flash.events.Event;
 
+	[SWF(width='500',height='680',backgroundColor='#ffffff',frameRate='25')]
 	public class Tetris extends Sprite {
 		public function Tetris() {
 
@@ -13,7 +14,7 @@ package {
 		}
 
 		private function onAddedToStage(event:Event):void {
-
+			
 			GameFacade.getInstance().startup(StartupCommand, this);
 		}
 	}
