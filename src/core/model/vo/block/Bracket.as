@@ -6,19 +6,22 @@
  * To change this template use File | Settings | File Templates.
  */
 package core.model.vo.block {
-import core.config.GeneralConfig;
-import core.model.vo.ZoneFigureVO;
+	import core.config.GeneralConfig;
+	import core.model.vo.ZoneFigureVO;
+	import core.model.vo.ZoneProperties;
 
-public class Bracket extends Figure{
+	public class Bracket extends Figure{
 
-    override protected function generateFigure():void{
+		override protected function generateFigure():void{
 
-        type = GeneralConfig.CUBE_3;
-        figure = new ZoneFigureVO(GeneralConfig.CUBE_3);
-        figure.zone[0][0] = 1;
-        figure.zone[0][1] = 1;
-        figure.zone[0][2] = 1;
-        figure.zone[1][2] = 1;
-    }
+			type = GeneralConfig.CUBE_3;
+			figure = new ZoneFigureVO(GeneralConfig.CUBE_3);
+			(figure.zone[0][0] as ZoneProperties).isBlock = true;
+			(figure.zone[0][1] as ZoneProperties).isBlock = true;
+			(figure.zone[0][2] as ZoneProperties).isBlock = true;
+			(figure.zone[1][2] as ZoneProperties).isBlock = true;
+		}
+	}
 }
-}
+
+

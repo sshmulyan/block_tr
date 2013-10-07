@@ -4,10 +4,12 @@ package core.model.vo {
 
 	public class ZoneFigureVO {
 		public var zone:Array;
+		public var globalCoordinates:Array;
 
 		public function ZoneFigureVO(typeFigures:String):void {
 
 			zone = [];
+			globalCoordinates = [];
 
 			switch(typeFigures) {
 				case GeneralConfig.CUBE_2:
@@ -33,10 +35,17 @@ package core.model.vo {
 				var lineZone:Array = [];
 
 				for(var y:int = 0; y < sizeY; y++) {
-					lineZone[y] = 0;
+					var properties:ZoneProperties = new ZoneProperties;
+					properties.x = x+4;
+					properties.y = y;
+					lineZone[y] = properties;
 				}
 				zone[x] = lineZone;
 			}
+
+
 		}
 	}
 }
+
+
